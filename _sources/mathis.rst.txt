@@ -1,0 +1,638 @@
+
+===========
+Class Index
+===========
+
+MATHIS Terms
+============
+
+.. raw:: html
+
+   <div id="CoaterDryerEquipment"></div>
+
+CoaterDryerEquipment
+--------------------
+
+* https://w3id.org/mathis/public/ontology#CoaterDryerEquipment
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Coater and dryer equipment for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="CoatingDevice"></div>
+
+CoatingDevice
+-------------
+
+* https://w3id.org/mathis/public/ontology#CoatingDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Coating device for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="CommandInput"></div>
+
+CommandInput
+------------
+
+* https://w3id.org/batteryequipment/public/ontology#CommandInput
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Class to define the control command for an equipment.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="CommandPoint"></div>
+
+CommandPoint
+------------
+
+* https://w3id.org/batteryequipment/public/ontology#CommandPoint
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Class to define the command points collected from the equipment.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="CommandProperty"></div>
+
+CommandProperty
+---------------
+
+* https://w3id.org/batteryequipment/public/ontology#CommandProperty
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">A command to be sent to a device.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="DeviceControlProcess"></div>
+
+DeviceControlProcess
+--------------------
+
+* https://w3id.org/batteryequipment/public/ontology#DeviceControlProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Class to define the control process for an equipment.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="DryerDevice"></div>
+
+DryerDevice
+-----------
+
+* https://w3id.org/mathis/public/ontology#DryerDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Dyer device to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ElectrodeCoatingDryingProcess"></div>
+
+ElectrodeCoatingDryingProcess
+-----------------------------
+
+* https://w3id.org/mathis/public/ontology#ElectrodeCoatingDryingProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Process for producing dried rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ElectrodeCoatingProcess"></div>
+
+ElectrodeCoatingProcess
+-----------------------
+
+* https://w3id.org/mathis/public/ontology#ElectrodeCoatingProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Process of coating a substrate with electrod slurry.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ElectrodeDryingProcess"></div>
+
+ElectrodeDryingProcess
+----------------------
+
+* https://w3id.org/mathis/public/ontology#ElectrodeDryingProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Process of drying a coated foil product.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ElectrodeRewindingProcess"></div>
+
+ElectrodeRewindingProcess
+-------------------------
+
+* https://w3id.org/mathis/public/ontology#ElectrodeRewindingProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Process of rewinding a rolled foil product.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ElectrodeUnwindingProcess"></div>
+
+ElectrodeUnwindingProcess
+-------------------------
+
+* https://w3id.org/mathis/public/ontology#ElectrodeUnwindingProcess
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Process of unwinding a rolled foil product.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice"></div>
+
+HotAir_DryerDevice
+------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice1"></div>
+
+HotAir_DryerDevice1
+-------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice1
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice1Bottom"></div>
+
+HotAir_DryerDevice1Bottom
+-------------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice1Bottom
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Bottom Part of First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice1Top"></div>
+
+HotAir_DryerDevice1Top
+----------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice1Top
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Top part of First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice2"></div>
+
+HotAir_DryerDevice2
+-------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice2
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice2Bottom"></div>
+
+HotAir_DryerDevice2Bottom
+-------------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice2Bottom
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Bottom Part of Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="HotAir_DryerDevice2Top"></div>
+
+HotAir_DryerDevice2Top
+----------------------
+
+* https://w3id.org/mathis/public/ontology#HotAir_DryerDevice2Top
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Top part of Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="IR_DryerDevice"></div>
+
+IR_DryerDevice
+--------------
+
+* https://w3id.org/mathis/public/ontology#IR_DryerDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Dyer device based on IR energy source to heat and dry the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ManufacturingComponent"></div>
+
+ManufacturingComponent
+----------------------
+
+* https://w3id.org/batteryequipment/public/ontology#ManufacturingComponent
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">A component is a smaller part or unit within a larger system or piece of equipment. It typically has a specific role or function within the equipment but doesn't perform the overall task on its own. Examples include a processor in a computer, a gear in an engine, or a valve in a pump. Components are building blocks of equipment and must be integrated into a system to contribute to the equipment's overall function.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ManufacturingDevice"></div>
+
+ManufacturingDevice
+-------------------
+
+* https://w3id.org/batteryequipment/public/ontology#ManufacturingDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Refers to a smaller, often more self-contained tool or machine that serves a specific function. Devices are typically simpler than equipment and are often more portable or singular in function. Example: A thermometer, smartphone, or a blood pressure monitor would be considered a device because they are relatively small and perform specific functions.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="ManufacturingEquipment"></div>
+
+ManufacturingEquipment
+----------------------
+
+* https://w3id.org/batteryequipment/public/ontology#ManufacturingEquipment
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Refers to larger systems or sets of tools used for a specific purpose, often involving multiple components working together. Equipment generally denotes something more complex or industrial, such as manufacturing machinery, medical systems, or laboratory apparatus. Example: A printing press or a medical imaging machine would be considered equipment, as they are larger, more complex setups used for industrial or professional applications.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="MeasurementPoint"></div>
+
+MeasurementPoint
+----------------
+
+* https://w3id.org/batteryequipment/public/ontology#MeasurementPoint
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Class to define the measurement points collected from the equipment.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="RewindingDevice"></div>
+
+RewindingDevice
+---------------
+
+* https://w3id.org/mathis/public/ontology#RewindingDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Rewinding device to roll the coated substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="UnwindingDevice"></div>
+
+UnwindingDevice
+---------------
+
+* https://w3id.org/mathis/public/ontology#UnwindingDevice
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Unwinding device to unroll the substrate foil for the production of rolled electrodes.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasDateTimeStampData"></div>
+
+hasDateTimeStampData
+--------------------
+
+* https://w3id.org/batteryequipment/public/ontology#hasDateTimeStampData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Date and time stamp at which the raw data was generated.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasFurnaceFanControl"></div>
+
+hasFurnaceFanControl
+--------------------
+
+* https://w3id.org/mathis/public/ontology#hasFurnaceFanControl
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Furnace Fan rotation control input.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasFurnaceFanData"></div>
+
+hasFurnaceFanData
+-----------------
+
+* https://w3id.org/mathis/public/ontology#hasFurnaceFanData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Furnace Fan rotation Data measurement.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasFurnaceTemperatureData"></div>
+
+hasFurnaceTemperatureData
+-------------------------
+
+* https://w3id.org/mathis/public/ontology#hasFurnaceTemperatureData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Furnace Temperature Data measurement.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasIRPyrometerTemperatureData"></div>
+
+hasIRPyrometerTemperatureData
+-----------------------------
+
+* https://w3id.org/mathis/public/ontology#hasIRPyrometerTemperatureData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">IR Dryer Temperature Data measurement suing pyrometer.</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasWinderDiameterData"></div>
+
+hasWinderDiameterData
+---------------------
+
+* https://w3id.org/mathis/public/ontology#hasWinderDiameterData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Winder diameter Data measurement (relevant for both unwinder and rewinder).</td>
+  </tr>
+  </table>
+
+
+.. raw:: html
+
+   <div id="hasWinderTensionData"></div>
+
+hasWinderTensionData
+--------------------
+
+* https://w3id.org/mathis/public/ontology#hasWinderTensionData
+
+.. raw:: html
+
+  <table class="element-table">
+  <tr>
+  <td class="element-table-key"><span class="element-table-key">Comment</span></td>
+  <td class="element-table-value">Winder Tension Data measurement (relevant for both unwinder and rewinder).</td>
+  </tr>
+  </table>
+
+
+
+    
+        
