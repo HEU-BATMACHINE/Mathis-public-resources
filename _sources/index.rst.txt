@@ -3,10 +3,10 @@
    :includehidden:
    :hidden:
 
-   Class Index <skz-ontology>
+   Class Index <MATHIS-ontology>
 
 
-SKZ Ontology
+MATHIS Ontology
 ================================
 
-Welcome to the **SKZ Ontology**, a semantic resource with essential terms and relationships to describe SKZ resources.
+Welcome to the **MATHIS Ontology**, a semantic resource with essential terms and relationships to describe MATHIS resources.
