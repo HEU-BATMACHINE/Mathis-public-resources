@@ -1,0 +1,296 @@
+#-------------------------------------------
+#          Coater Dryer equipment
+#-------------------------------------------
+# Define the CoaterDryerEquipment class
+coater:CoaterDryerEquipment rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingEquipment ;
+    rdfs:comment "Coater and dryer equipment for the production of rolled electrodes."@en ;
+    rdfs:label "CoaterDryerEquipment"@en ;
+    skos:prefLabel "CoaterDryerEquipment"@en .
+
+# Define the CoatingDevice class
+coater:CoatingDevice rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingDevice ;
+    rdfs:comment "Coating device for the production of rolled electrodes."@en ;
+    rdfs:label "CoatingDevice"@en ;
+    skos:prefLabel "CoatingDevice"@en .
+
+# Define the UnwindingDevice class
+coater:UnwindingDevice rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingDevice ;
+    rdfs:comment "Unwinding device to unroll the substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "UnwindingDevice"@en ;
+    skos:prefLabel "UnwindingDevice"@en .
+
+# Define the RewindingDevice class
+coater:RewindingDevice rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingDevice ;
+    rdfs:comment "Rewinding device to roll the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "RewindingDevice"@en ;
+    skos:prefLabel "RewindingDevice"@en .
+
+# Define the DryerDevice class
+coater:DryerDevice rdf:type owl:Class ;
+    rdfs:subClassOf equipment:ManufacturingDevice ;
+    rdfs:comment "Dyer device to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "DryerDevice"@en ;
+    skos:prefLabel "DryerDevice"@en .
+
+# Define the DryerDevice class
+coater:IR_DryerDevice rdf:type owl:Class ;
+    rdfs:subClassOf coater:DryerDevice ;
+    rdfs:comment "Dyer device based on IR energy source to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "IR_DryerDevice"@en ;
+    skos:prefLabel "IR_DryerDevice"@en .
+
+# Define the DryerDevice class
+coater:HotAir_DryerDevice rdf:type owl:Class ;
+    rdfs:subClassOf coater:DryerDevice ;
+    rdfs:comment "Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice"@en ;
+    skos:prefLabel "HotAir_DryerDevice"@en .
+
+# Define the DryerDevice1 class
+coater:HotAir_DryerDevice1 rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice ;
+    rdfs:comment "First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice1"@en ;
+    skos:prefLabel "HotAir_DryerDevice1"@en .
+
+# Define the DryerDevice2 class
+coater:HotAir_DryerDevice2 rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice ;
+    rdfs:comment "Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice2"@en ;
+    skos:prefLabel "HotAir_DryerDevice2"@en .
+
+# specify that they are disjoint
+coater:HotAir_DryerDevice1 owl:disjointWith coater:HotAir_DryerDevice2 .
+
+# Define the DryerDevice1Bottom class
+coater:HotAir_DryerDevice1Bottom rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice1 ;
+    rdfs:comment "Bottom Part of First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice1Bottom"@en ;
+    skos:prefLabel "HotAir_DryerDevice1Bottom"@en .
+
+# Define the DryerDevice1Top class
+coater:HotAir_DryerDevice1Top rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice1 ;
+    rdfs:comment "Top part of First furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice1Top"@en ;
+    skos:prefLabel "HotAir_DryerDevice1Top"@en .
+
+# specify that they are disjoint
+coater:HotAir_DryerDevice1Bottom owl:disjointWith coater:HotAir_DryerDevice1Top .
+
+# Define the DryerDevice2Bottom class
+coater:HotAir_DryerDevice2Bottom rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice2 ;
+    rdfs:comment "Bottom Part of Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice2Bottom"@en ;
+    skos:prefLabel "HotAir_DryerDevice2Bottom"@en .
+
+# Define the DryerDevice2Top class
+coater:HotAir_DryerDevice2Top rdf:type owl:Class ;
+    rdfs:subClassOf coater:HotAir_DryerDevice2 ;
+    rdfs:comment "Top part of Second furnace in the Dyer device based on a furnace with Hot Air to heat and dry the coated substrate foil for the production of rolled electrodes."@en ;
+    rdfs:label "HotAir_DryerDevice2Top"@en ;
+    skos:prefLabel "HotAir_DryerDevice2Top"@en .
+
+# specify that they are disjoint
+coater:HotAir_DryerDevice2Bottom owl:disjointWith coater:HotAir_DryerDevice2Top .
+
+# Define the properties of the CoaterDryerEquipment
+coater:CoaterDryerEquipment rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       owl:onProperty equipment:hasDevice ;
+       owl:someValuesFrom coater:DryerDevice] .
+
+coater:CoaterDryerEquipment rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:onProperty equipment:hasDevice ;
+        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onClass coater:CoatingDevice] .
+
+coater:CoaterDryerEquipment rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:onProperty equipment:hasDevice ;
+        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onClass coater:UnwindingDevice] .
+
+coater:CoaterDryerEquipment rdfs:subClassOf [
+        rdf:type owl:Restriction ;
+        owl:onProperty equipment:hasDevice ;
+        owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+        owl:onClass coater:RewindingDevice] .
+
+#----------------------------
+# properties
+
+coater:hasFurnaceFanControl rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf equipment:hasCommandProperty ;
+   rdfs:domain equipment:DeviceControlProcess ;
+   # emmo:AngularVelocity https://w3id.org/emmo#EMMO_bd325ef5_4127_420c_83d3_207b3e2184fd
+   rdfs:range emmo:EMMO_bd325ef5_4127_420c_83d3_207b3e2184fd ;
+   rdfs:label "hasFurnaceFanControl" ;
+   skos:prefLabel "hasFurnaceFanControl"@en ;
+   rdfs:comment "Furnace Fan rotation control input." .
+
+coater:hasFurnaceTemperatureData rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+   rdfs:domain chameo:RawData ;
+   rdfs:range emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ; 
+   rdfs:label "hasFurnaceTemperatureData" ;
+   skos:prefLabel "hasFurnaceTemperatureData"@en ;
+   rdfs:comment "Furnace Temperature Data measurement." .
+
+coater:hasIRPyrometerTemperatureData rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+   rdfs:domain chameo:RawData ;
+   rdfs:range emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ; 
+   rdfs:label "hasIRPyrometerTemperatureData" ;
+   skos:prefLabel "hasIRPyrometerTemperatureData"@en ;
+   rdfs:comment "IR Dryer Temperature Data measurement suing pyrometer." .
+
+coater:hasFurnaceFanData rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+   rdfs:domain chameo:RawData ;  
+   # emmo:AngularVelocity https://w3id.org/emmo#EMMO_bd325ef5_4127_420c_83d3_207b3e2184fd
+   rdfs:range emmo:EMMO_bd325ef5_4127_420c_83d3_207b3e2184fd ;
+   rdfs:label "hasFurnaceFanData" ;
+   skos:prefLabel "hasFurnaceFanData"@en ;
+   rdfs:comment "Furnace Fan rotation Data measurement." .
+
+coater:hasWinderDiameterData rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+   rdfs:domain chameo:RawData ;  
+   # emmo:Length = https://w3id.org/emmo#EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac
+   rdfs:range emmo:EMMO_cd2cd0de_e0cc_4ef1_b27e_2e88db027bac ;
+   rdfs:label "hasWinderDiameterData" ;
+   skos:prefLabel "hasWinderDiameterData"@en ;
+   rdfs:comment "Winder diameter Data measurement (relevant for both unwinder and rewinder)." .
+
+coater:hasWinderTensionData rdf:type owl:ObjectProperty ;
+   rdfs:subPropertyOf emmo:EMMO_fd689787_31b0_41cf_bf03_0d69af76469d ;
+   rdfs:domain chameo:RawData ;  
+   # emmo:Force = https://w3id.org/emmo#EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef
+   rdfs:range emmo:EMMO_1f087811_06cb_42d5_90fb_25d0e7e068ef ;
+   rdfs:label "hasWinderTensionData" ;
+   skos:prefLabel "hasWinderTensionData"@en ;
+   rdfs:comment "Winder Tension Data measurement (relevant for both unwinder and rewinder)." .
+
+#----------------------------
+# create the processes
+coater:ElectrodeCoatingDryingProcess rdf:type owl:Class ;
+    # EMMO concept for Manufacturing: https://w3id.org/emmo#EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b
+    rdfs:subClassOf emmo:EMMO_a4d66059_5dd3_4b90_b4cb_10960559441b ;
+    rdfs:comment "Process for producing dried rolled electrodes."@en ;
+    rdfs:label "ElectrodeCoatingDryingProcess"@en ;
+    skos:prefLabel "ElectrodeCoatingDryingProcess"@en .
+
+coater:ElectrodeUnwindingProcess rdf:type owl:Class ;
+    # EMMO concept for ReshapeManufacturing: https://w3id.org/emmo#EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b
+    rdfs:subClassOf emmo:EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b ;
+    rdfs:comment "Process of unwinding a rolled foil product."@en ;
+    rdfs:label "ElectrodeUnwindingProcess"@en ;
+    skos:prefLabel "ElectrodeUnwindingProcess"@en .
+
+coater:ElectrodeRewindingProcess rdf:type owl:Class ;
+    # EMMO concept for ReshapeManufacturing: https://w3id.org/emmo#EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b
+    rdfs:subClassOf emmo:EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b ;
+    rdfs:comment "Process of rewinding a rolled foil product."@en ;
+    rdfs:label "ElectrodeRewindingProcess"@en ;
+    skos:prefLabel "ElectrodeRewindingProcess"@en .
+
+coater:ElectrodeCoatingProcess rdf:type owl:Class ;
+    # EMMO concept for CoatinManufacturing: https://w3id.org/emmo#EMMO_92028373_3a43_4b80_9a69_caca22df3918
+    rdfs:subClassOf emmo:EMMO_92028373_3a43_4b80_9a69_caca22df3918 ;
+    rdfs:comment "Process of coating a substrate with electrod slurry."@en ;
+    rdfs:label "ElectrodeCoatingProcess"@en ;
+    skos:prefLabel "ElectrodeCoatingProcess"@en .
+
+coater:ElectrodeDryingProcess rdf:type owl:Class ;
+    # EMMO concept for HeatTreatment: https://w3id.org/emmo#EMMO_dacfc7dc_5ddb_4f67_986b_dcd01d649d60
+    rdfs:subClassOf emmo:EMMO_2b4783a6_36ad_48c8_8f5d_fe7c05ad298b ;
+    rdfs:comment "Process of drying a coated foil product."@en ;
+    rdfs:label "ElectrodeDryingProcess"@en ;
+    skos:prefLabel "ElectrodeDryingProcess"@en .
+
+# define the participants for each process (those being tools in our case)
+# it works because the domain is Process and the range Object (not Participant)
+coater:ElectrodeDryingProcess rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       # EMMO concept for hasTemporaryParticipant https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
+       owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+       owl:someValuesFrom coater:DryerDevice] .
+
+coater:ElectrodeUnwindingProcess rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       # EMMO concept for hasTemporaryParticipant https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
+       #owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+       # EMMO concept hasAgent https://w3id.org/emmo#EMMO_cd24eb82_a11c_4a31_96ea_32f870c5580a
+       owl:onProperty equipment:hasDevice ;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+       owl:onClass coater:UnwindingDevice] .
+
+coater:ElectrodeRewindingProcess rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       # EMMO concept for hasTemporaryParticipant https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
+       #owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+       owl:onProperty equipment:hasDevice ;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+       owl:onClass coater:RewindingDevice] .
+
+coater:ElectrodeCoatingProcess rdfs:subClassOf [
+       rdf:type owl:Restriction ;
+       # EMMO concept for hasTemporaryParticipant https://w3id.org/emmo#EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77
+       owl:onProperty emmo:EMMO_35c29eb6_f57e_48d8_85af_854f9e926e77 ;
+       owl:onProperty equipment:hasDevice ;
+       owl:qualifiedCardinality "1"^^xsd:nonNegativeInteger ;
+       owl:onClass coater:CoatingDevice] .
+
+#-----------------------------------------------------
+# Technical Data Properties #
+
+coater:hasRollerWidth rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:Length ;
+    rdfs:domain coater:CoaterDryerEquipment ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Roller Width" ;
+    rdfs:comment "Width of the roller in mm." .
+
+coater:hasSubstrateWidth rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:Length ;
+    rdfs:domain coater:CoaterDryerEquipment ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Substrate Width" ;
+    rdfs:comment "Width of the substrate material in mm." .
+
+coater:hasCoatingWidth rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:Length ;
+    rdfs:domain coater:CoatingDevice ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Coating Width" ;
+    rdfs:comment "Width of the coating in mm." .
+
+coater:hasCoatingSpeedMin rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:Speed ;
+    rdfs:domain coater:UnwindingDevice ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Minimum Material Speed" ;
+    rdfs:comment "Minimum speed of the material through the equipment in m/min." .
+
+coater:hasCoatingSpeedMax rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:Speed ;
+    rdfs:domain coater:UnwindingDevice ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Maximum Material Speed" ;
+    rdfs:comment "Maximum speed of the material through the equipment in m/min." .
+
+coater:hasTemperatureMax rdf:type owl:DatatypeProperty ;
+    rdfs:subPropertyOf emmo:EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f ;
+    rdfs:domain coater:HotAir_DryerDevice ;
+    rdfs:range xsd:float ;
+    rdfs:label "has Maximum Temperature" ;
+    rdfs:comment "Maximum temperature in the hot air dryer in Celsius." .
