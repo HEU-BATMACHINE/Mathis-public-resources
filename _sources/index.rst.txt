@@ -3,7 +3,7 @@
    :includehidden:
    :hidden:
 
-   Class Index <MATHIS-ontology>
+     Class Index <pages/mathis>
 
 
 MATHIS Ontology
